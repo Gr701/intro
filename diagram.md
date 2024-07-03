@@ -1,12 +1,12 @@
 ```mermaid
     sequenceDiagram
                 
-        browser->>server: POST https://studies.cs.helsinki.fi/exampleapp/new_note (**Content:** text\html: note="note content"+)
+        browser->>server: POST https://studies.cs.helsinki.fi/exampleapp/new_note (Content: text\html: note="note content"+)
         activate server
         Note right of browser: The browser sends user input
         server-->>browser: HTTP status code 302 (Location: /exampleapp/notes)
         deactivate server
-        Note right of browser: Server redirects the browser
+        Note left of server: Server redirects the browser
         
         browser->>server: GET https://studies.cs.helsinki.fi/exampleapp/notes
         activate server
