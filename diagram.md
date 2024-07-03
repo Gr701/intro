@@ -1,7 +1,8 @@
 ```mermaid
     sequenceDiagram
                 
-        browser-->>server: POST https://studies.cs.helsinki.fi/exampleapp/new_note \n text\html: note="note content"+
+        browser-->>server: POST https://studies.cs.helsinki.fi/exampleapp/new_note
+                            Content: text\html: note="note content"+
         activate server
         server-->>browser: Location: /exampleapp/notes
         deactivate server
