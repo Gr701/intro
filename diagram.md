@@ -6,7 +6,7 @@
         Note right of browser: The browser sends user input
         server-->>browser: HTTP status code 302 (𝗟𝗼𝗰𝗮𝘁𝗶𝗼𝗻: /exampleapp/notes)
         deactivate server
-        Note left of server: Server redirects the browser
+        Note left of server: The server creates a new note object, and adds it to an array called notes. Then server redirects the browser
         
         browser->>server: GET https://studies.cs.helsinki.fi/exampleapp/notes
         activate server
